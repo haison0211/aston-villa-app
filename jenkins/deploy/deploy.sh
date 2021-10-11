@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo ang-project > /tmp/.auth
+echo ang > /tmp/.auth
 echo $PASS >> /tmp/.auth
 
 scp -i /opt/vm-deploy.pem /tmp/.auth ubuntu@18.166.116.124:/tmp/.auth

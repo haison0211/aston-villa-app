@@ -3,7 +3,7 @@
 echo  "***********************"
 echo  "******Pushing img *****"
 
-IMAGE="ang-project"
+IMAGE="ang"
 
 echo "****Logging docker hub ****"
 docker login -u haison123 -p $PASS
