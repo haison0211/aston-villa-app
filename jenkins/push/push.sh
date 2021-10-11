@@ -10,5 +10,5 @@ docker login -u haison123 -p $PASS
 echo "***Tagging image***"
 docker tag $IMAGE:$BUILD_TAG haison123/$IMAGE
 echo "***Push image****"
-docker push haison123/$IMAGE
+docker push haison123/$IMAGE:latest
 
