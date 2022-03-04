@@ -4,6 +4,8 @@ pipeline {
 
     environment {
         PASS = credentials('registry-pass')
+        IMAGE_NAME = "ang"
+        IMAGE_VERSION = "0.0.1"
     }
 
     stages {

@@ -3,12 +3,11 @@
 echo  "***********************"
 echo  "******Pushing img *****"
 
-IMAGE="ang"
-
 echo "****Logging docker hub ****"
+echo "pass is" $PASS
 docker login -u haison123 -p $PASS
 echo "***Tagging image***"
-docker tag $IMAGE haison123/$IMAGE
+docker tag $IMAGE haison123/$IMAGE_NAME:$IMAGE_VERSION
 echo "***Push image****"
-docker push haison123/$IMAGE:latest
+docker push haison123/$IMAGE:$IMAGE_VERSION
 
