@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-
+        PASS = "123"
     }
 
     stages {
